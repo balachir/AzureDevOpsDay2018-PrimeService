@@ -30,5 +30,13 @@ namespace PrimeService01.UnitTests
             Assert.True(result, $"23 should be prime");
         }
 
+        [Fact]
+        public void ReturnTrueGivenValueOf37()
+        {
+            var result = _primeService.IsPrime(37);
+
+            Assert.True(result, $"37 should be prime");
+        }
+
     }
 }
